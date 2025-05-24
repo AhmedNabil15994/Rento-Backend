@@ -1,0 +1,11 @@
+<?php
+
+
+Route::get('/', function (){
+    return redirect()->to(route('dashboard.login'));
+})->name('frontend.home');
+//Route::get('/',"HomeController@index")->name("frontend.home");
+
+// contact us
+//Route::get('/contact-us', 'HomeController@contactUs')->name('frontend.contact_us');
+//Route::post('/contact-us', 'HomeController@sendContactUs')->name('frontend.send-contact-us');
